@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p>姓名:
+		<input/></p>
+		<p>年龄:
+		<input /></p>
+		<p>电话:
+		<input/></p>
+		<p>住址: 
+		<input/></p>
+		<button>确定</button>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+	<script>
+		$(function(){
+			var $p=$("<p>性别:</p>");
+//			$("p:nth-child(1)").append($p);
+//			$p.append($("<input class='sex'>"));
+//			
+			$("p:last").remove();
+			
+			$("input").after("<span>该项是必填的</span>");
+			
+			$("span").css("color","red");
+//			$("p:contains('住址')").remove();
+//			$("p").remove("p:last");
+//			$("p[id='ll']").remove();
+			
+				
+		})
+	
+	</script>
+</html>

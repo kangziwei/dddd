@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	<input name="none1" value="none1" />
+		<form>
+		<lable>姓名：</lable>
+		<input name="name" />
+		<lable>通讯：</lable>	
+		<input name="newsletter"/>
+		</form>
+		<input class="clsl" name="none2" value="none2" />
+		<input class="clsl" name="none3" value="none3" />
+		<input id="none4" class="clsl" name="none4" value="none4" />
+		<input name="none5" value="none5" />
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+	<script>
+		$(document).ready(function(){
+			$("body input")
+			$("from > input")
+			$("from ~ input")
+			$("from~input:first")
+			$("input .cls1")
+			$("input #none5")
+			$("input:first")
+		})
+	</script>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul id="ul1">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<p id="p1">jjj</p>
+			<button id="btn">按钮</button>
+		</ul>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+	<script>
+		$(function(){
+			//创建元素
+			$p=$("<p id='p1'>gggg</p>")
+			//jqurey追加元素8个方法
+			//1.append,appendTo  内部末尾追加
+//			$("#ul1").append($p);
+//			$($p).appendTo($("#ul1"));
+			//prepend prependTo 内部上方追加
+//			$("#ul1").prepend($p);
+//			$($p).prependTo($("#ul1"));
+			//before   在外部的上方追加
+//			$("#ul1").before($p);
+//			$($p).insertBefore("#ul1");
+			//在外部的最后追加
+//			$("#ul1").after($p);
+//			$($p).insertAfter("#ul1");
+			
+			//删除 remove  empty
+//			$("li").remove("li:eq(2)");
+			//empty  删除的是里面的内容
+//			$("#ul1").empty();
+			
+			//替换  replaceWith
+//			$("li").replaceWith("<p>0000</p>");
+//			$("<div>jjj</div>").replaceAll("li");
+			
+			//遍历
+//			$("li").each(function(index,element){
+//				console.log("index"+index+"*********"+element);
+//			})
+			
+			//克隆  clone()只克隆标签不克隆内容
+//			$("p").clone().insertBefore($("ul"));
+//			$("p").click(function(){
+//				alert("kk");
+//			})
+			//clone(true) 还克隆内容
+//			$("p").clone(true).insertBefore($("ul"));
+			
+			//jqurey 和dom 的区别
+//			console.log($("li"));
+//			console.log(document.getElementsByTagName("ul"));
+			//jqurey对象 向dom 的转换 
+			//1 []
+//			console.log($("#ul1"));
+//			console.log($("#ul1")[0]);
+			//2 get(下标)
+//			console.log($("#ul1"));
+//			console.log($("#ul1").get(0));
+			//dom  向jqurey对象的转换   $()
+			console.log(ul);
+//			console.log($(ul));
+			var btn=document.getElementById("btn");
+			//js onclick 事件绑定
+			btn.onclick=function(){
+				alert("js onclick");
+			}
+			//事件执行
+			btn.click();
+		})
+	</script>
+</html>
